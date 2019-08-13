@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dwB-wL-cgW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--О сервисе-->
+        <scene sceneID="KvR-Z5-WyT">
+            <objects>
+                <viewController title="О сервисе" id="NsU-co-1Ea" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rnn-EH-D6s"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCY-Yq-tQv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qhf-5t-gpz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-Y7-9GX">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запись на прием к врачу" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="902-xp-VYJ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="902-xp-VYJ" firstAttribute="leading" secondItem="Aba-Y7-9GX" secondAttribute="leading" constant="16" id="9BL-Qf-e45"/>
+                                    <constraint firstAttribute="trailing" secondItem="902-xp-VYJ" secondAttribute="trailing" constant="16" id="CoX-vQ-dmi"/>
+                                    <constraint firstAttribute="bottom" secondItem="902-xp-VYJ" secondAttribute="bottom" constant="8" id="Frx-nn-mv4"/>
+                                    <constraint firstItem="902-xp-VYJ" firstAttribute="top" secondItem="Aba-Y7-9GX" secondAttribute="top" constant="13" id="Mkd-NH-IMM"/>
+                                    <constraint firstItem="902-xp-VYJ" firstAttribute="centerX" secondItem="Aba-Y7-9GX" secondAttribute="centerX" id="W3M-zc-VeD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HCY-Yq-tQv" firstAttribute="top" secondItem="Aba-Y7-9GX" secondAttribute="bottom" id="B8C-ac-Xdy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aba-Y7-9GX" secondAttribute="trailing" constant="-20" id="NnX-FT-cTh"/>
+                            <constraint firstItem="Aba-Y7-9GX" firstAttribute="leading" secondItem="Qhf-5t-gpz" secondAttribute="leadingMargin" constant="-20" id="Zw5-Sc-zEQ"/>
+                            <constraint firstItem="Aba-Y7-9GX" firstAttribute="top" secondItem="rnn-EH-D6s" secondAttribute="bottom" constant="-64" id="rGl-9m-QcH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="О приложении" id="Y9a-rr-HIL">
+                        <barButtonItem key="leftBarButtonItem" image="menu_button" id="f5w-c4-umj">
+                            <connections>
+                                <segue destination="CP9-fL-ax1" kind="unwind" unwindAction="unwindToMenuViewController:" id="ibG-Oz-z6x"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="phone-actionbar-icon" id="hxc-Yq-aE5">
+                            <connections>
+                                <action selector="callPhone:" destination="NsU-co-1Ea" id="Tyv-Fa-gBe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutLabel" destination="902-xp-VYJ" id="24m-db-0w0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efJ-nZ-XHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CP9-fL-ax1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-372"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jrv-bt-9lK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dwB-wL-cgW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D3V-lA-Nob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NsU-co-1Ea" kind="relationship" relationship="rootViewController" id="LgM-dZ-DsR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ok-ei-Okg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="-372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_button" width="12" height="12"/>
+        <image name="phone-actionbar-icon" width="16" height="16"/>
+    </resources>
+</document>

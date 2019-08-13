@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="40Q-Da-efX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Мои талоны-->
+        <scene sceneID="GBI-xy-AkS">
+            <objects>
+                <viewController title="Мои талоны" id="2MC-8m-8zO" customClass="HistoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R73-T0-WbC"/>
+                        <viewControllerLayoutGuide type="bottom" id="nvQ-FB-Z3s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ioB-dG-oUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kdF-QA-fgh">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TalonCell" id="gB4-q5-LN8" customClass="TalonTableViewCell">
+                                        <rect key="frame" x="0.0" y="92" width="383" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gB4-q5-LN8" id="4Vr-Cb-uqv">
+                                            <frame key="frameInset" width="383" height="86"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4u-t8-OWy">
+                                                    <frame key="frameInset" minY="-1" width="65" height="87"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olc-aX-xvM">
+                                                    <frame key="frameInset" minX="73" minY="8" width="519" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx5-TO-DfX">
+                                                    <frame key="frameInset" minX="73" minY="37" width="519" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cm9-c5-hoI">
+                                                    <frame key="frameInset" minX="73" minY="61" width="519" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="F4u-t8-OWy" id="xgi-bH-Bcb"/>
+                                            <outlet property="doctorLabel" destination="Olc-aX-xvM" id="DbG-Oh-BTl"/>
+                                            <outlet property="moLabel" destination="cm9-c5-hoI" id="W95-1V-5Pt"/>
+                                            <outlet property="specialityLabel" destination="Qx5-TO-DfX" id="Ufv-9h-HVB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2MC-8m-8zO" id="AqU-J9-4aT"/>
+                                    <outlet property="delegate" destination="2MC-8m-8zO" id="FGT-co-1g1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kdF-QA-fgh" firstAttribute="top" secondItem="ioB-dG-oUT" secondAttribute="topMargin" id="1fp-4B-JSE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kdF-QA-fgh" secondAttribute="trailing" constant="-20" id="M5n-ew-e0R"/>
+                            <constraint firstItem="kdF-QA-fgh" firstAttribute="leading" secondItem="ioB-dG-oUT" secondAttribute="leadingMargin" constant="-20" id="Omx-Q6-ucj"/>
+                            <constraint firstItem="kdF-QA-fgh" firstAttribute="top" secondItem="R73-T0-WbC" secondAttribute="bottom" id="OtL-L6-1uK"/>
+                            <constraint firstItem="nvQ-FB-Z3s" firstAttribute="top" secondItem="kdF-QA-fgh" secondAttribute="bottom" id="cec-1K-aiG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OtL-L6-1uK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мои талоны" id="sSP-hu-tbU">
+                        <barButtonItem key="leftBarButtonItem" image="menu_button" id="6Ry-9W-gPW">
+                            <connections>
+                                <segue destination="BC6-q7-syr" kind="unwind" unwindAction="unwindToMenuViewController:" id="i9K-5j-JW1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="kdF-QA-fgh" id="24e-w7-s6X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fF2-OT-gT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BC6-q7-syr" userLabel="Exit" sceneMemberID="exit"/>
+                <searchDisplayController id="0tb-MA-rdw">
+                    <connections>
+                        <outlet property="delegate" destination="2MC-8m-8zO" id="UnC-Vw-HGy"/>
+                        <outlet property="searchContentsController" destination="2MC-8m-8zO" id="zo6-OT-FAZ"/>
+                        <outlet property="searchResultsDataSource" destination="2MC-8m-8zO" id="5pL-DO-fhk"/>
+                        <outlet property="searchResultsDelegate" destination="2MC-8m-8zO" id="rdt-Gg-IJ6"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="186" y="472"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3oX-la-MvI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="40Q-Da-efX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Laa-ll-m6I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2MC-8m-8zO" kind="relationship" relationship="rootViewController" id="ss3-7V-c4u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88q-ft-ZyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="486"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_button" width="12" height="12"/>
+    </resources>
+</document>

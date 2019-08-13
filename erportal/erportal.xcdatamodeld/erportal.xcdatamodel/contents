@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Profile" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isactive" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passport" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snils" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Talons" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hashTalon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="moId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="moName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymenttype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="queueId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="queueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speciality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Profile" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="Talons" positionX="-54" positionY="63" width="128" height="345"/>
+    </elements>
+</model>

@@ -1,0 +1,26 @@
+{
+  "name": "PSICommonUtils",
+  "version": "0.0.5",
+  "summary": "Common helpers for iOS app",
+  "homepage": "https://github.com/qntxor/PSICommonUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "qntxor": "qntxor@gmail.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/qntxor/PSICommonUtils.git",
+    "tag": "0.0.5"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "public_header_files": "Classes/*.h"
+}
